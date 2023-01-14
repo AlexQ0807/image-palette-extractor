@@ -58,11 +58,3 @@ class PaletteExtractor:
                 return cls.extract_palette(img=img, to_hex=to_hex)
         except Exception as e:
             raise e
-
-from pprint import pprint
-
-img_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1200px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
-
-# Fetch remaining credits
-palette = PaletteExtractor.extract_palette_from_url_image(img_url, to_hex=True)
-pprint(palette)
